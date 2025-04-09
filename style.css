@@ -204,7 +204,7 @@ body {
   }
 
   .card1 {
-    background-image: url(../images/bg-pattern-quotation.svg);
+    background-image: url(./images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position: 80% 0%;
   }
