@@ -58,13 +58,14 @@ body {
   padding: 2em;
   display: grid;
   grid-template-columns: 45px auto;
-  grid-template-rows: 16px 16px auto;
+  grid-template-rows: 16px 16px auto minmax(auto, 1fr);
   grid-template-areas:
     "img name"
     "img title"
     "main-quote main-quote"
     "testimonial testimonial";
   margin: 0px 30px;
+  box-shadow: 0px 15px 30px -11px var(--grey-400);
 }
 
 .card__profile {
@@ -189,7 +190,10 @@ body {
   .container {
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, auto));
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, minmax(200px, 400px));
+    grid-auto-rows: 300px;
     grid-template-areas:
       "card1 card1 card2 card5"
       "card3 card4 card4 card5";
